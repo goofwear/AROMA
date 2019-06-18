@@ -30,6 +30,10 @@ selectbox(
   	"Hebrew",             "ברוכים הבאים להתקנה",										 0		 #-- selected.0 = 9
   	"Japanese",            "インストーラへようこそ",                                             0,      #-- selected.0 = 10
     "Hungarian",          "Üdvözöllek a telepítőben",                                    0      #-- selected.0 = 11
+	"Português do Brasil", "Bem vindo ao Instalador"                                     0       #-- selected.0 = 12
+    "Turkish",            "Kuruluma Hoşgeldiniz",                                        0,      #-- selected.0 = 13
+    "Greek",              "Καλώς ήρθατε στην εγκατάσταση",                               0,      #-- selected.0 = 14
+    "Polish",             "Witamy w instalatorze",                                       0,      #-- selected.0 = 15
 
   #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
 );
@@ -79,4 +83,20 @@ endif;
 
 if prop("lang.prop","selected.0")=="11" then
   loadlang("langs/hu.lang");
+endif;
+
+if prop("lang.prop","selected.0")=="12" then
+  loadlang("langs/pt_br.lang");
+endif;
+
+if prop("lang.prop","selected.0")=="13" then
+  loadlang("langs/tr.lang");
+endif;
+
+if prop("lang.prop","selected.0")=="14" then
+  loadlang("langs/el.lang");
+endif;
+
+if prop("lang.prop","selected.0")=="15" then
+  loadlang("langs/pl.lang");
 endif;
